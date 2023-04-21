@@ -36,7 +36,7 @@ const ProjectShowcase: React.FC = () => {
                             </p>
                             <div className="flex mb-4">
                                 <a
-                                    href="https://github.com/your-username/Banner-Forge"
+                                    href="https://github.com/Revan214/banner-forge"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center mr-4"
@@ -45,7 +45,7 @@ const ProjectShowcase: React.FC = () => {
                                     <span>Github</span>
                                 </a>
                                 <a
-                                    href="https://your-project-url.com"
+                                    href="https://banner-forge.netlify.app/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center"
@@ -69,7 +69,7 @@ const ProjectShowcase: React.FC = () => {
                             </p>
                             <div className="flex mb-4">
                                 <a
-                                    href="https://github.com/your-username/Banner-Forge"
+                                    href="https://github.com/Revan214/StudentEntryUI"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center mr-4"
@@ -78,7 +78,6 @@ const ProjectShowcase: React.FC = () => {
                                     <span>Github</span>
                                 </a>
                                 <a
-                                    href="https://your-project-url.com"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center"
