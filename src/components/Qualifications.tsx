@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiC, SiCplusplus, SiPython, SiDjango, SiMysql, SiMongodb, SiExpress, SiTailwindcss } from 'react-icons/si';
+import { SiC, SiCplusplus, SiPython, SiDjango, SiMysql, SiMongodb, SiExpress, SiTailwindcss, SiJavascript, SiTypescript } from 'react-icons/si';
 
 const Qualifications: React.FC = () => {
     return (
@@ -20,7 +20,7 @@ const Qualifications: React.FC = () => {
                         <div className="flex justify-center mb-4"><SiPython className="text-6xl text-white" /></div>
                         <h3 className="text-2xl font-semibold mb-2 text-black font-mono">Python</h3>
                     </div>
-                    <div className="bg-gray-800 shadow-lg rounded-lg p-4 bg-gradient-to-br from-yellow-500 to-orange-500">
+                    <div className="bg-gray-800 shadow-lg rounded-lg p-4 bg-gradient-to-br from-yellow-500 to-red-500">
                         <div className="flex justify-center mb-4"><SiDjango className=" text-6xl text-white" /></div>
                         <h3 className="text-2xl font-semibold mb-2 text-black font-mono">Django</h3>
                     </div>
@@ -51,6 +51,14 @@ const Qualifications: React.FC = () => {
                     <div className="bg-gray-800 shadow-lg rounded-lg p-4 bg-gradient-to-br from-teal-500 to-cyan-700">
                         <div className="flex justify-center mb-4"><SiTailwindcss className="text-white text-6xl" /></div>
                         <h3 className="text-2xl font-semibold text-black mb-2 font-mono">TailwindCSS</h3>
+                    </div>
+                    <div className="bg-gray-800 shadow-lg rounded-lg p-4 bg-gradient-to-br from-pink-500 to-fuchsia-600">
+                        <div className="flex justify-center mb-4"><SiJavascript className="text-white text-6xl" /></div>
+                        <h3 className="text-2xl font-semibold text-black mb-2 font-mono">Javascript</h3>
+                    </div>
+                    <div className="bg-gray-800 shadow-lg rounded-lg p-4 bg-gradient-to-br from-green-500 to-emerald-600">
+                        <div className="flex justify-center mb-4"><SiTypescript className="text-white text-6xl" /></div>
+                        <h3 className="text-2xl font-semibold text-black mb-2 font-mono">Typescript</h3>
                     </div>
                 </div>
             </div>

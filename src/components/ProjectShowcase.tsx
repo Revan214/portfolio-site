@@ -1,5 +1,5 @@
 import { FaGithub, FaExternalLinkAlt, FaReact } from "react-icons/fa";
-import { SiC, SiCplusplus, SiPython, SiDjango, SiMysql, SiMongodb, SiExpress, SiTailwindcss } from 'react-icons/si';
+import { SiC, SiCplusplus, SiPython, SiDjango, SiMysql, SiMongodb, SiExpress, SiTailwindcss, SiJavascript, SiTypescript } from 'react-icons/si';
 import bannerForgeThumbnail from '../assets/bannerForgeThumbnail.png';
 import studentUi from '../assets/studentUi.jpg';
 import portfolioThumbnail from '../assets/portfolioThumbnail.png';
@@ -20,8 +20,11 @@ const ProjectShowcase: React.FC = () => {
                             className="object-cover object-center h-full w-full"
                             src={bannerForgeThumbnail}
                         />
-                        <div className="p-4 bg-neutral-900 bg-gradient-to-br from-green-500 to-yellow-500">
-                            <FaReact className="text-2xl text-blue-900" />
+                        <div className="p-4 bg-neutral-900 bg-gradient-to-br flex justify-start from-green-500 to-yellow-500">
+                            <FaReact className="text-2xl text-blue-900 mr-4" />
+                            <div className="bg-blue-300">
+                                <SiTypescript className="text-2xl text-teal-700" />
+                            </div>
                         </div>
                     </div>
 
@@ -113,6 +116,9 @@ const ProjectShowcase: React.FC = () => {
                         <div className="p-4 bg-neutral-900 bg-gradient-to-br flex justify-start from-blue-500 to-green-500">
                             <FaReact className="text-2xl text-blue-900 mr-4" />
                             <SiTailwindcss className="text-2xl text-teal-800 mr-4" />
+                            <div className="bg-green-500">
+                                <SiTypescript className="text-2xl text-blue-800" />
+                            </div>
                         </div>
                     </div>
 
@@ -125,7 +131,7 @@ const ProjectShowcase: React.FC = () => {
                             </p>
                             <div className="flex mb-4">
                                 <a
-                                    href="https://github.com/your-username/Banner-Forge"
+                                    href="https://github.com/Revan214/portfolio-site"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center mr-4"
