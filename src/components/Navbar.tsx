@@ -14,6 +14,71 @@ const Navbar: React.FC = () => {
     setIsTransparent(false);
   };
 
+  const handleQualificationsClick = () => {
+    setIsQualifications(true);
+    setIsProjects(false);
+    setIsContact(false);
+    setIsDrawerOpen(false);
+  
+    // Smooth scrolling to qualifications section
+    const qualificationsSection = document.getElementById('qualifications');
+    if (qualificationsSection) {
+      window.scrollTo({
+        top: qualificationsSection.offsetTop - 50, // Adjust this value if you need to account for a fixed navbar
+        behavior: 'smooth',
+        });
+      }
+  };
+  
+  const handleProjectsClick = () => {
+    setIsQualifications(false);
+    setIsProjects(true);
+    setIsContact(false);
+    setIsDrawerOpen(false);
+  
+    // Smooth scrolling to projects section
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      window.scrollTo({
+        top: projectsSection.offsetTop - 50, // Adjust this value if you need to account for a fixed navbar
+        behavior: 'smooth',
+        });
+      }
+  };
+  
+  const handleContactClick = () => {
+    setIsQualifications(false);
+    setIsProjects(false);
+    setIsContact(true);
+    setIsDrawerOpen(false);
+  
+    // Smooth scrolling to contact section
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      window.scrollTo({
+        top: contactSection.offsetTop - 50, // Adjust this value if you need to account for a fixed navbar
+        behavior: 'smooth',
+        });
+      }
+  };
+
+  const handleHomeClick = () => {
+    setIsQualifications(false);
+    setIsProjects(false);
+    setIsContact(true);
+    setIsDrawerOpen(false);
+  
+    // Smooth scrolling to contact section
+    const contactSection = document.getElementById('home');
+    if (contactSection) {
+      window.scrollTo({
+        top: contactSection.offsetTop - 50, // Adjust this value if you need to account for a fixed navbar
+        behavior: 'smooth',
+        });
+      }
+  };
+  
+
   useEffect(() => {
     const handleScroll = () => {
       const homeSection = document.getElementById('home');
@@ -54,26 +119,26 @@ const Navbar: React.FC = () => {
     >
 
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between ittems-center py-4">
           <div className="text-white font-bold text-2xl font-mono">
-            <button className="focus:outline-none" onClick={() => window.location.href = '#home'}>{`<Revan's File/>`}</button>
+            <button className="focus:outline-none" onClick={handleHomeClick}>{`<Revan's File/>`}</button>
           </div>
           <div className="text-center hidden md:block">
             <a
-              href="#qualifications"
-              className="inline-block font-bold text-gray-300 hover:text-white mx-3 font-mono"
+              onClick={handleQualificationsClick}
+              className="inline-block cursor-pointer font-bold text-gray-300 hover:text-white mx-3 font-mono"
             >
               {`<Qualifications/>`}
             </a>
             <a
-              href="#projects"
-              className="inline-block font-bold text-gray-300 hover:text-white mx-3 font-mono"
+              onClick={handleProjectsClick}
+              className="inline-block cursor-pointer font-bold text-gray-300 hover:text-white mx-3 font-mono"
             >
               {`<Project Showcase/>`}
             </a>
             <a
-              href="#contact"
-              className="inline-block font-bold text-gray-300 hover:text-white mx-3 font-mono"
+              onClick={handleContactClick}
+              className="inline-block cursor-pointer font-bold text-gray-300 hover:text-white mx-3 font-mono"
             >
               {`<Contact Me/>`}
             </a>
@@ -100,22 +165,22 @@ const Navbar: React.FC = () => {
         <div className="md:hidden h-screen bg-gray-800 py-2 px-4">
           <a
             href="#qualifications"
-            className="block font-bold text-gray-300 hover:text-white my-2 font-mono"
-            onClick={handleToggle}
+            className="block cursor-pointer font-bold text-gray-300 hover:text-white my-2 font-mono"
+            onClick={()=>{handleQualificationsClick()}}
           >
             {`<Qualifications/>`}
           </a>
           <a
             href="#projects"
-            className="block font-bold text-gray-300 hover:text-white my-2 font-mono"
-            onClick={handleToggle}
+            className="block cursor-pointer font-bold text-gray-300 hover:text-white my-2 font-mono"
+            onClick={()=>{handleProjectsClick()}}
           >
             {`<Project Showcase/>`}
           </a>
           <a
             href="#contact"
-            className="block font-bold text-gray-300 hover:text-white my-2 font-mono"
-            onClick={handleToggle}
+            className="block cursor-pointer font-bold text-gray-300 hover:text-white my-2 font-mono"
+            onClick={()=>{handleContactClick()}}
           >
             {`<Contact Me/>`}
           </a>

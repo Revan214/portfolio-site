@@ -22,9 +22,7 @@ const ProjectShowcase: React.FC = () => {
                         />
                         <div className="p-4 bg-neutral-900 bg-gradient-to-br flex justify-start from-green-500 to-yellow-500">
                             <FaReact className="text-2xl text-blue-900 mr-4" />
-                            <div className="bg-blue-300">
-                                <SiTypescript className="text-2xl text-teal-700" />
-                            </div>
+                            <SiTypescript className="text-2xl bg-gray-300 text-purple-700" />
                         </div>
                     </div>
 
@@ -115,9 +113,7 @@ const ProjectShowcase: React.FC = () => {
                         <div className="p-4 bg-neutral-900 bg-gradient-to-br flex justify-start from-blue-500 to-green-500">
                             <FaReact className="text-2xl text-blue-900 mr-4" />
                             <SiTailwindcss className="text-2xl text-teal-800 mr-4" />
-                            <div className="bg-green-500">
-                                <SiTypescript className="text-2xl text-blue-800" />
-                            </div>
+                            <SiTypescript className="text-2xl bg-gray-400 text-blue-800" />
                         </div>
                     </div>
 
