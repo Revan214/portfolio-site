@@ -4,6 +4,7 @@ import bannerForgeThumbnail from '../assets/bannerForgeThumbnail.png';
 import studentUi from '../assets/studentUi.jpg';
 import portfolioThumbnail from '../assets/portfolioThumbnail.png';
 import trollEmoji from '../assets/trollEmoji.png';
+import calculatorThumbnail from '../assets/calculatorThumbnail.png';
 
 import "../App.css"
 
@@ -87,7 +88,7 @@ const ProjectShowcase: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="w-full md:w-1/2 mt-10 md:mb-0 rounded-lg overflow-hidden md:ml-0">
+                    <div className="w-full md:w-1/2 mt-10 sm:mt-0 md:mb-0 rounded-lg overflow-hidden md:ml-0">
                         <img
                             alt="Student UI"
                             className="object-cover object-center h-full w-full"
@@ -135,6 +136,52 @@ const ProjectShowcase: React.FC = () => {
                                     <span>Github</span>
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Student UI */}
+
+                <div className="max-w-5xl rounded-lg overflow-hidden p-8 mt-14 bg-gray-900 mx-auto px-6 md:px-8 flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-pink-500 to-red-500">
+                    <div className="w-full md:w-1/2 md:pr-10">
+                        <div className="bg-gray-800 rounded-lg overflow-hidden p-4">
+                            <h2 className="text-3xl font-semibold mb-4 font-mono">Calculator Forge</h2>
+                            <p className="text-lg mb-4 font-mono">
+                            This is a simple calculator application that allows you to add, multiply, subtract, and divide numbers like a calculator.
+                            </p>
+                            <div className="flex mb-4">
+                                <a
+                                    href="https://github.com/Revan214/Calculator-Forge"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center mr-4"
+                                >
+                                    <FaGithub className="mr-2" />
+                                    <span>Github</span>
+                                </a>
+                                <a
+                                    href="https://calculator-forge.netlify.app/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center"
+                                >
+                                    <FaExternalLinkAlt className="mr-2" />
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="w-full mt-10 sm:mt-0 md:w-1/2 md:mb-0 rounded-lg overflow-hidden md:ml-0">
+                        <img
+                            alt="Student UI"
+                            className="object-cover object-center h-full w-full"
+                            src={calculatorThumbnail}
+                        />
+                        <div className="p-4 bg-neutral-900 bg-gradient-to-br from-teal-500 to-purple-500 flex justify-end">
+                            <FaReact className="text-2xl text-red-200 mr-4" />
+                            <SiTailwindcss className="text-2xl text-teal-400 mr-4" />
+                            <SiTypescript className="text-2xl text-blue-200" />
                         </div>
                     </div>
                 </div>
